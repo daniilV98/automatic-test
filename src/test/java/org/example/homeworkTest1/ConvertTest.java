@@ -1,5 +1,6 @@
-package org.example;
+package org.example.homeworkTest1;
 
+import org.example.homework1.Convert;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,6 +15,7 @@ public class ConvertTest {
     @Test
     public void rnd()
     {
-        Assert.assertEquals("The resulting number is not 2!", Convert.randomNumber(5), 3);
+        Assert.assertEquals("The resulting number is not 2!", Convert.randomNumber(3), 2);
     }
+
 }
