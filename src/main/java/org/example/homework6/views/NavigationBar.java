@@ -1,5 +1,6 @@
 package org.example.homework6.views;
 
+import io.qameta.allure.Step;
 import org.example.homework6.base.BaseView;
 import org.example.homework6.base.SubMenu;
 import org.example.homework6.enums.NavigationBarTabs;
@@ -16,6 +17,7 @@ public class NavigationBar extends BaseView {
     /**
      * Реализация метода для наведения на кнопку TV+
      * */
+    @Step("Move cursor to navigation tab")
     public SubMenu moveCursorToNavigationTab(NavigationBarTabs tab) {
         Actions actions = new Actions(driver);
         actions

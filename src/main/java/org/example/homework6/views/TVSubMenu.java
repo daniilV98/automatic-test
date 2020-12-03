@@ -1,5 +1,6 @@
 package org.example.homework6.views;
 
+import io.qameta.allure.Step;
 import org.example.homework6.base.BaseView;
 import org.example.homework6.base.SubMenu;
 import org.example.homework6.base.SubMenuButtons;
@@ -17,6 +18,7 @@ public class TVSubMenu extends SubMenu {
      * Реализация метода для клика кнопки внутри TV+ бара
      * */
     @Override
+    @Step("Click on sub menu button")
     public BaseView clickSubMenuButton(SubMenuButtons buttons) {
         if (buttons instanceof TVSubMenuButtons) {
             switch ((TVSubMenuButtons) buttons) {

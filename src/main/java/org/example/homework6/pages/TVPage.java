@@ -1,5 +1,6 @@
 package org.example.homework6.pages;
 
+import io.qameta.allure.Step;
 import org.example.homework6.base.BaseView;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,18 +21,24 @@ public class TVPage extends BaseView {
         super(driver);
     }
 
+    @Step(value = "Click on TV+ button")
     public TVPage clickTVPlusButton() {
         tvPlusButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on button of Sport")
     public TVPage clickSportButton() {
         sportButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on channel button")
     public TVPage clickChannelButton() {
         channelButton.click();
+        makeScreen();
         return this;
     }
 }

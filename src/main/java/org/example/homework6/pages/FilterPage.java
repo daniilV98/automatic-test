@@ -1,5 +1,6 @@
 package org.example.homework6.pages;
 
+import io.qameta.allure.Step;
 import org.example.homework6.base.BaseView;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,58 +45,80 @@ public class FilterPage extends BaseView {
         super(driver);
     }
 
+    @Step(value = "Click on film button")
     public FilterPage clickFilterFilmButton() {
         filterFilmButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on filter button")
     public FilterPage clickFilterFilterButton() {
         filterFilterButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Choose of Genre")
     public FilterPage clickFilterGenre() {
         filterGenre.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on country button ")
     public FilterPage clickFilterCountryButton() {
         filterCountryButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Choose of country")
     public FilterPage clickFilterCountry() {
         filterCountry.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on year button")
     public FilterPage clickFilterYearButton() {
         filterYearButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Choose of year")
     public FilterPage clickFilterYear() {
         filterYear.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on subgenres button")
     public FilterPage clickFilterSubgenresButton() {
         filterSubgenresButton.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Choose of subgenres")
     public FilterPage clickFilterSubgenres() {
         filterSubgenres.click();
+        makeScreen();
         return this;
     }
 
+    @Step(value = "Click on language button")
     public FilterPage clickFilterLanguageButton() {
         filterLanguageButton.click();
+        makeScreen();
         return new FilterPage(driver);
     }
 
+    @Step(value = "Click on results button")
     public FilterPage clickFilterResultsButton() {
         filterResultsButton.click();
+        makeScreen();
         return this;
     }
 }
